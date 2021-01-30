@@ -31,22 +31,6 @@ function Employees() {
       <Container fluid="true">
       <Searchbar />
       <Row>
-        {/* <Col size="md-6 sm-12">
-          {employees.length ? (
-            <List>
-              {employees.map(({login, name}) => {
-                // const {name, phone, email, dob, picture, login } = person
-                return (
-                  <ListItem key={login.uuid}>
-                    <p>{name.first} {name.last}</p>
-                  </ListItem>
-                );
-              })}
-            </List>
-          ) : (
-            <h3>No Results to Display</h3>
-          )}
-        </Col> */}
           <Table employees={employees}/>
       </Row>
       </Container>
