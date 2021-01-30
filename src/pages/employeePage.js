@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "../components/container";
-import Col from "../components/col";
+// import Col from "../components/col";
 import Row from "../components/row";
 import Header from "../components/header";
 import getEmployees from "../api/API";
@@ -9,7 +9,6 @@ import Table from "../components/table"
 
 function Employees() {
   const [employees, setEmployees] = useState([]);
-
 
   useEffect(() => {
       loadEmployees();
