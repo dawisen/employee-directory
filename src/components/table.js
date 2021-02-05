@@ -1,22 +1,36 @@
-import React from 'react';
-// import './table.css';
+import React, { useState } from 'react';
 
 const Table = ({ employees }) => {
-//   const toggleSort = () => {
-//   const employee = {employees}
-//   return employee.sort((a, b) => a.name.last.localeCompare(b.name.last));
-//  };
-// onClick={() => toggleSort()}
+  const [listToSort, setListToSort] = useState(employees);
+  const [buttonVal, setButtonVal] = useState(0)
 
-  console.log(employees);
+  const sortByLastName = () => {
+    const listToSort = employees;
+    
+    // if the table is unsorted
+    if (buttonVal === 0) {
+      setButtonVal(1)
+      const sorted = listToSort.sort((a, b) => {
+        //localecompare to sort special characters as well
+        return a.name.last.localeCompare(b.name.last);
+      });
+      // set the new sorted state of the array 
+      return setListToSort(sorted);
+    }
+    // if the table has already been sorted a-z, reverse to sort z-a
+    else if (buttonVal === 1) {
+      setButtonVal(0)
+      listToSort.reverse()
+    }
+  };
+
   return (
-    <div className="container">
       <table className="table">
         <thead>
           <tr>
             <th>Image</th>
             <th>
-              <button type="button">
+              <button className="btn btn-primary btn-sm" value={buttonVal} onClick={sortByLastName}>
                 Name
               </button>
             </th>
@@ -32,7 +46,7 @@ const Table = ({ employees }) => {
               return (
                 <tr key={login.uuid}>
                   <td>
-                    <img src={picture.large}></img>
+                    <img src={picture.large} alt="employee thumbnail"></img>
                   </td>
                   <td>
                     {name.first} {name.last}
@@ -50,7 +64,6 @@ const Table = ({ employees }) => {
           )}
         </tbody>
       </table>
-    </div>
   );
 }
 
