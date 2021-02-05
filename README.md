@@ -1,5 +1,5 @@
 # Employee Directory
-View the deployed page on [GitHub](https://github.com/dawisen/employee-directory/deployments/activity_log?environment=github-pages)
+View the deployed page on [GitHub](https://dawisen.github.io/employee-directory/)
 
 ## Description 
 Employees and managers would like to be able to view non-sensitive information about other employees easily from their company website. Employee Directory is a React application that allows users to display employee information and dynamically update the directory with data from a connected API or database. Whenever the database is updated, those changes are reflected on the page with current employee data. The days of redeploying directory pages every time you need to update or delete employee information are over!
