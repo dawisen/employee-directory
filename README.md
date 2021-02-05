@@ -1,4 +1,7 @@
 # Employee Directory
+
+<img src="employee-directory-screenshot.png">
+
 View the deployed page on [GitHub](https://github.com/dawisen/employee-directory/deployments/activity_log?environment=github-pages)
 
 ## Description 
