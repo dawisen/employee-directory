@@ -14,6 +14,7 @@ For demo purposes, Employee Directory uses the API [Random User Generator](https
 * [Questions](#Questions)
 
 ## Installation
+While inside the root directory run this command in the terminal
 >npm i
   
 ## Usage
