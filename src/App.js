@@ -1,10 +1,8 @@
-import Employees from "./pages/employeePage";
-import './App.css';
+import EmployeePage from "./pages/employeePage";
 
 function App() {
   return (
-    //stuff goes here
-    <Employees />
+    <EmployeePage />
   );
 }
 
