@@ -28,5 +28,5 @@ To use the repo, fork it to your github page or clone the repository.
 dawisen
   
 ## Questions
-If you have any questions or issues please contact me via [email](daniellewwise@gmail.com)<br>
+If you have any questions or issues please contact me via email (daniellewwise@gmail.com)<br>
 View my other projects [here](https://github.com/dawisen?tab=repositories)
