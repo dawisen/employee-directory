@@ -12,7 +12,6 @@ For demo purposes, Employee Directory uses the API [Random User Generator](https
 * [Usage](#Usage)
 * [License](#License)
 * [Contributing](#Contributing)
-* [Testing](#Testing)
 * [Questions](#Questions)
 
 ## Installation
@@ -27,9 +26,6 @@ To use the repo, fork it to your github page or clone the repository.
 
 ## Contributors
 dawisen
-
-## Testing
-no tests available
   
 ## Questions
 If you have any questions or issues please contact me via [email](daniellewwise@gmail.com)<br>
